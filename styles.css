@@ -1,0 +1,54 @@
+/* Center the H1 Title */
+h1 {
+    text-align: center;
+    margin: 20px 0; /* Space above and below */
+    color: #513219; /* Dark brown color for the title */
+}
+
+/* Logo Styling inside the H1 */
+.logo {
+    max-width: 300px; /* Control the logo size */
+    height: auto;     /* Keep original aspect ratio */
+    display: block;   /* Make image behave like block */
+    margin: 0 auto;   /* Center the logo horizontally */
+}
+
+/* Navigation Menu */
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: #513219; /* Text color for menu items */
+    background-color: #efe1c6; /* Light background color */
+    border-radius: 5px; /* Rounded corners */
+    overflow: hidden;
+    text-align: center; /* Center the menu items */
+}
+
+.nav-item {
+    display: inline-block; /* Change from float to inline-block to center items */
+}
+
+.nav-link {
+    display: block;
+    color: #513219;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    background-color: #a59484; /* Light brown on hover */
+    color: black; /* Black text on hover */
+}
+
+/* Responsive Styles (for smaller screens) */
+@media screen and (max-width: 600px) {
+    .nav-item {
+        display: block; /* Stack items vertically */
+        width: 100%;    /* Full width buttons on mobile */
+    }
+    .nav-link {
+        padding: 10px;
+    }
+}
